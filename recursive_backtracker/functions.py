@@ -5,9 +5,7 @@ def ij_to_index(i,j,cols):
 def index_to_ij(n,cols):
 	return [n%cols, int(n/cols)]
 
-def check(touching,n,cols,rows,grid):
-	pos = index_to_ij(n,cols)
-	i,j = pos[0],pos[1]
+def check(touching,i,j,cols,rows,grid):
 	if j==0:
 		if i==0:
 			order = random.sample([1,2],2)
@@ -33,10 +31,6 @@ def check(touching,n,cols,rows,grid):
 		if not grid[touching[d]].visited:
 			return d
 	return -2
-
-def draw(lista):
-	for n in range(len(lista)):
-		lista[n].show()
 
 def opposite_wall(n):
 	if n==0:
