@@ -2,9 +2,8 @@ import tkinter as tk
 import random
 from functions import *
 
-width, height, w, speed = 510, 810, 20, 50
-width, height, w, speed = 1440, 900, 10, 1
-
+width, height, w, speed = 510, 810, 10, 1
+#width, height, w, speed = 1440, 900, 10, 1
 
 margin = 5
 cols, rows = int((width-2*margin)/w), int((height-2*margin)/w)
@@ -12,7 +11,7 @@ cols, rows = int((width-2*margin)/w), int((height-2*margin)/w)
 grid = []
 
 root = tk.Tk()
-root.attributes("-fullscreen", True)
+#root.attributes("-fullscreen", True)
 root.title("Recursive Backtracker")
 canvas = tk.Canvas(root, width = width, height = height)
 canvas.pack()
