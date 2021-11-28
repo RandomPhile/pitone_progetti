@@ -2,7 +2,7 @@ import tkinter as tk
 import random
 from functions import *
 
-width, height, w, speed = 510, 810, 10, 1
+width, height, w, speed = 510, 810, 10, 10
 #width, height, w, speed = 1440, 900, 10, 1
 
 margin = 5

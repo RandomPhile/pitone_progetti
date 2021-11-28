@@ -2,14 +2,14 @@ import numpy as np
 import os
 from patterns import *
 
-sizer = 58#MAX 58
-sizec = 119#MAX 119
+sizer = 30#MAX 58
+sizec = 80#MAX 119
 def aggiungi(M_figura,riga,colonna):
 	M[riga:riga+M_figura.shape[0], colonna:colonna+M_figura.shape[1]] += M_figura
 
 M = np.zeros((sizer,sizec))
 
-aggiungi(M_R_pentomino,30,50)
+aggiungi(M_glider,5,5)
 
 def stampa():
 	for r in range(sizer):
